@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-zoox/testify)](https://goreportcard.com/report/github.com/go-zoox/testify)
 [![Coverage Status](https://coveralls.io/repos/github/go-zoox/testify/badge.svg?branch=master)](https://coveralls.io/github/go-zoox/testify?branch=master)
 [![GitHub issues](https://img.shields.io/github/issues/go-zoox/testify.svg)](https://github.com/go-zoox/testify/issues)
-[![Release](https://img.shields.io/github/testify/go-zoox/testify.svg?label=Release)](https://github.com/go-zoox/testify/testifys)
+[![Release](https://img.shields.io/github/tag/go-zoox/testify.svg?label=Release)](https://github.com/go-zoox/testify/tags)
 
 ## Installation
 To install the package, run:
