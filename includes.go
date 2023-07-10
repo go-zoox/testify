@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-zoox/core-utils/array"
 	"github.com/ttacon/chalk"
 )
 
@@ -15,7 +14,7 @@ func Includes[T comparable](t *testing.T, list []T, item T, message ...string) {
 		messageX = message[0]
 	}
 
-	if !array.Includes(list, item) {
+	if !arrayIncludes(list, item) {
 		listX := fmt.Sprintf("%#v", list)
 		itemX := fmt.Sprintf("%#v", item)
 		t.Errorf(

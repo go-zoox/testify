@@ -4,12 +4,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-zoox/core-utils/array"
 	"github.com/ttacon/chalk"
 )
 
+type Number interface {
+	int | int64 | float64 | float32 | uint | uint8 | uint16 | uint32 | uint64 | int8 | int16 | int32
+}
+
 // Range logs error if value is not in range [min, max].
-func Range[T array.Number](t *testing.T, min T, max T, value T, message ...string) {
+func Range[T Number](t *testing.T, min T, max T, value T, message ...string) {
 	messageX := fmt.Sprintf("value is not in range (min: %v, max: %v)", min, max)
 	if len(message) > 0 {
 		messageX = message[0]

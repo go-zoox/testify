@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-zoox/core-utils/array"
 	"github.com/ttacon/chalk"
 )
 
@@ -15,7 +14,7 @@ func Enums[T comparable](t *testing.T, enums []T, element T, message ...string) 
 		messageX = message[0]
 	}
 
-	if !array.Includes(enums, element) {
+	if !arrayIncludes(enums, element) {
 		expectedX := fmt.Sprintf("%#v", enums)
 		receivedX := fmt.Sprintf("%#v", element)
 		t.Errorf(
