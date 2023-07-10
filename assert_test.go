@@ -8,3 +8,11 @@ func TestAssert(t *testing.T) {
 	Assert(t, a != b)
 	Assert(t, a != b, "a and b should be not equal")
 }
+
+func TestAssertTrue(t *testing.T) {
+	AssertTrue(t, true)
+}
+
+func TestAssertFalse(t *testing.T) {
+	AssertFalse(t, false)
+}

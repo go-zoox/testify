@@ -20,3 +20,23 @@ func Assert(t *testing.T, ok bool, message ...string) {
 		)
 	}
 }
+
+// AssertTrue asserts that the specified value is true.
+func AssertTrue(t *testing.T, received bool, message ...string) {
+	messageX := "assert true but got false"
+	if len(message) > 0 {
+		messageX = message[0]
+	}
+
+	Assert(t, received, messageX)
+}
+
+// AssertFalse asserts that the specified value is false.
+func AssertFalse(t *testing.T, received bool, message ...string) {
+	messageX := "assert false but got true"
+	if len(message) > 0 {
+		messageX = message[0]
+	}
+
+	Assert(t, !received, messageX)
+}
